@@ -1,2 +1,2 @@
 # sweet-react-tools
-Simple React Tools to streamline development with React/React Native/JSX.
+Simple tools to streamline development with React, React Native & JSX.
