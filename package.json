@@ -1,0 +1,58 @@
+{
+  "name": "sweet-react-tools",
+  "version": "0.2.0",
+  "author": "Lina Goetz",
+  "type": "module",
+  "description": "Simple, useful and efficient tools to streamline development with React, JSX, React Native & Expo",
+  "keywords": [
+    "react",
+    "react native",
+    "native",
+    "tools",
+    "tool",
+    "easy",
+    "jsx",
+    "expo",
+    "app",
+    "children",
+    "nodes",
+    "react nodes",
+    "element",
+    "component"
+  ],
+  "homepage": "https://github.com/cglina/sweet-react-tools#readme",
+  "bugs": {
+    "url": "https://github.com/cglina/sweet-react-tools/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cglina/sweet-react-tools.git"
+  },
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "react": "*",
+    "sweet-js-tools": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "5.8 - 6.0"
+  }
+}
