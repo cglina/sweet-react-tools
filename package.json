@@ -1,0 +1,31 @@
+{
+  "name": "sweet-react-tools",
+  "version": "1.0.0",
+  "description": "Simple tools to streamline development with React, React Native & JSX.",
+  "keywords": [
+    "react",
+    "react native",
+    "native",
+    "tools",
+    "easy",
+    "jsx",
+    "expo",
+    "app",
+    "children"
+  ],
+  "homepage": "https://github.com/cglina/sweet-react-tools#readme",
+  "bugs": {
+    "url": "https://github.com/cglina/sweet-react-tools/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cglina/sweet-react-tools.git"
+  },
+  "license": "MIT",
+  "author": "Carolina Goetz",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'hi'"
+  }
+}
