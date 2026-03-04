@@ -57,7 +57,7 @@ export function childNames(children) {
         /// TO-DO: error log children, no names!
         return []
     }
-// This ensures that the elements/objs provided will have a type prop:
+    // This ensures that the elements/objs provided will have a type prop:
     const list = childArray.map(({ type: func }) => func.name)
     return list
 }
@@ -157,27 +157,27 @@ export function findNamedChildren(children, childName, first = false) {
  * @returns {object | object[] | []} 
  */
 
- /*
+/*
 export function familyTree(children) {
-    const resultingObj = {}
-    if (!children) {
-        /// TO-DO: error log no children
-        return resultingObj
-    }
-    const kids = filteredReactChildren(children)
-    const parentData = kids[0]['_owner']
-    if (parentData) {
-        const { type, alternate } = parentData
-        const grandParent = type['name']
-        const { child: { type: parent, pendingProps }, childLanes, siblings, key, index } = alternate
-        resultingObj.parent = parent['name']
-        resultingObj.childCount = childLanes
-        resultingObj.grandParent = grandParent
-        resultingObj.siblings = siblings
-        resultingObj.parentKey = key
-        resultingObj.parentProps = pendingProps ///// FILTER CHILDREN OUT!!!!
-        resultingObj.parentIndex = index
-    }
+   const resultingObj = {}
+   if (!children) {
+       /// TO-DO: error log no children
+       return resultingObj
+   }
+   const kids = filteredReactChildren(children)
+   const parentData = kids[0]['_owner']
+   if (parentData) {
+       const { type, alternate } = parentData
+       const grandParent = type['name']
+       const { child: { type: parent, pendingProps }, childLanes, siblings, key, index } = alternate
+       resultingObj.parent = parent['name']
+       resultingObj.childCount = childLanes
+       resultingObj.grandParent = grandParent
+       resultingObj.siblings = siblings
+       resultingObj.parentKey = key
+       resultingObj.parentProps = pendingProps ///// FILTER CHILDREN OUT!!!!
+       resultingObj.parentIndex = index
+   }
 }
 
 */

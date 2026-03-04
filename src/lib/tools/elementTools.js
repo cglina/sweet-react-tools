@@ -50,7 +50,7 @@ export function isReactElement(item, strict = false) {
  * @param {boolean} strict
  * @returns {[] | object[]}
  */
-export function filteredReactChildren(children, strict = false) {
+export function filteredReactArray(children, strict = false) {
     const array = Array.isArray(children) ? children : [children]
     if (array.length === 0) {
         //// TO-DO: error log empty arr
