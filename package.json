@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "Carolina Goetz",
   "type": "module",
+  "main": "src/index.js",
   "description": "Simple tools to streamline development with React, React Native & JSX.",
   "keywords": [
     "react",
