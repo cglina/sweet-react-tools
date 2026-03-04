@@ -1,6 +1,6 @@
 {
   "name": "sweet-react-tools",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "author": "Carolina Goetz",
   "type": "module",
   "main": "src/index.js",
@@ -25,6 +25,7 @@
     "url": "git+https://github.com/cglina/sweet-react-tools.git"
   },
   "license": "MIT",
+
   "scripts": {
     "test": "echo 'hi'"
   }
