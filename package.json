@@ -1,7 +1,7 @@
 {
   "name": "sweet-react-tools",
   "version": "0.0.0",
-  "author": "Carolina Goetz",
+  "author": "Lina Goetz",
   "type": "module",
   "main": "src/index.js",
   "description": "Simple tools to streamline development with React, React Native & JSX.",
