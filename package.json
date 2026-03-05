@@ -1,6 +1,6 @@
 {
   "name": "sweet-react-tools",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Lina Goetz",
   "type": "module",
   "main": "src/index.js",
