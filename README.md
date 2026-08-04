@@ -82,7 +82,7 @@ const renderableChildren = removeNullishChildren(
 
 <a name="props-tools"></a>
 
-### 🧩 ### 🧩 Props Tools
+### 🧩 Props Tools
 
 Runtime and compile-time utilities for inspecting, constraining,
 and working with React component props.
