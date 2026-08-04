@@ -1,6 +1,6 @@
 {
   "name": "sweet-react-tools",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "author": "Lina Goetz",
   "type": "module",
   "description": "Simple, useful and efficient tools to streamline development with React, JSX, React Native & Expo",
@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "react": "*",
+    "sweet-dev-tools": "^0.0.1",
     "sweet-js-tools": "^1.0.0"
   },
   "devDependencies": {

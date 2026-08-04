@@ -82,17 +82,28 @@ const renderableChildren = removeNullishChildren(
 
 <a name="props-tools"></a>
 
-### 🧩 Props Tools
+### 🧩 ### 🧩 Props Tools
 
-Utilities for inspecting and working with React component props.
+Runtime and compile-time utilities for inspecting, constraining,
+and working with React component props.
 
 Current helpers include:
+
+**Runtime (`propTools`)**
 
 - check whether props exist: `hasProps`
 - check for a `children` prop: `hasChildren`
 - check for renderable children: `hasRenderableChildren`
 - retrieve prop keys: `getPropKeys`
 - check for specific prop keys: `hasPropKeys`
+
+**Typing (`propUnions`)**
+
+- remove the `children` prop from a prop shape: `WithoutChildren`
+- create prop shapes by excluding shared properties: `PropsWithout`
+- create mutually exclusive prop shapes: `PropsEither`
+- require at least one prop: `PropsAtLeastOne`
+- require all props or none: `PropsAllOrNone`
 
 #### Example usage
 
@@ -106,9 +117,23 @@ if (hasPropKeys(props, ["disabled", "variant"])) {
 }
 
 const keys = getPropKeys(props);
-```
 
-##
+type ProviderProps =
+    PropsEither<
+        ConfigProps,
+        GranularProps
+    >;
+
+type ButtonProps = PropsAtLeastOne<{
+    label?: string;
+    icon?: React.ReactNode;
+}>;
+
+type RangeProps = PropsAllOrNone<{
+    min: number;
+    max: number;
+}>
+```
 
 # Planned Next Steps
 

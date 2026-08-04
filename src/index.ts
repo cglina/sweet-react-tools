@@ -4,3 +4,4 @@ export * from './children/childrenTools.js'
 
 export * from './props/propLabels.js'
 export * from './props/propTools.js'
+export * from './props/propUnions.js'

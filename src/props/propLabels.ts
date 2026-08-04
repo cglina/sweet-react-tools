@@ -22,7 +22,10 @@ export type SweetComponentProps = SweetProps & {
     children?: React.ReactNode;
 };
 
-export type SimplePropValue = string | number | boolean
 
-export type SimplePropValues = SimplePropValue[]
+export type SimplePropValue =
+    | string
+    | number
+    | boolean;
 
+export type SimplePropValues = SimplePropValue[];

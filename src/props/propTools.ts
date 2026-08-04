@@ -135,4 +135,3 @@ export function hasRenderableChildren(props?: SweetComponentProps): boolean {
 
     return removeNullishChildren(props.children).length > 0;
 }
-
