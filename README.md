@@ -5,19 +5,12 @@
 
 A library of **practical** & **reusable** React utilities designed to make working with **children**, **props**, and common React patterns simpler, safer, and more consistent.
 
-> ⚠️ **Work in Progress**
->
-> Sweet React Tools is currently in its early stages.
->
-> The project is intentionally being built alongside real applications, with new utilities added only after proving useful in practice.
->
-> The current release focuses on a small set of foundational helpers for working with React children and props.
-
 - [Overview](#overview-)
 - [Installation](#installation)
 - [Contents](#contents)
   - [Children Tools](#-children-tools)
   - [Props Tools](#-props-tools)
+  - [Element](#element-inspection)
 - [Planned Next Steps](#planned-next-steps)
 
 ## Overview ✨
@@ -151,11 +144,25 @@ The following utilities are planned, but will only be added after being validate
 - `filterChildrenByProp`
 - `filterChildrenByPropValue`
 
-## Elements
+## 🔍 Element Inspection
 
-Element inspection utilities are currently on hold.
+> ⚠️ **Work in Progress**
+>
+> Element inspection utilities are currently in their early stages.
+>
+> The project is intentionally being built alongside real applications, with new utilities added only after proving useful in practice.
+>
+> The goal is to provide a **friendly, TypeScript-first API for inspecting React elements**. This area will continue to evolve as real-world usage reveals the most useful abstractions.
 
-The original goal was to provide a friendlier API for inspecting React elements, but this area will be revisited after further real-world usage determines the most useful abstractions.
+**Current foundation**
+
+```ts
+interface SweetBaseElement {
+    children?: React.ReactNode;
+}
+```
+
+Provides a minimal React element interface that can be extended to build more specialised Sweet element interfaces and types.
 
 ## Future
 
